@@ -112,3 +112,11 @@ GitHub helps developers collaborate on projects, track code changes, and maintai
 
 </body>
 </html>  
+<h2>Task Manager</h2>
+
+<div class="input-area">
+    <input type="text" id="taskInput" placeholder="Enter a new task">
+    <button onclick="addTask()">Add Task</button>
+</div>
+
+<ul id="taskList"></ul>
