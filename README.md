@@ -114,6 +114,78 @@ GitHub helps developers collaborate on projects, track code changes, and maintai
 </div>
 
 <ul id="taskList"></ul>
+.input-area{
+display:flex;
+gap:10px;
+margin-top:15px;
+margin-bottom:20px;
+}
+
+.input-area input{
+flex:1;
+padding:10px;
+border:1px solid #ccc;
+border-radius:5px;
+}
+
+.input-area button{
+padding:10px 15px;
+background:#007bff;
+color:white;
+border:none;
+border-radius:5px;
+cursor:pointer;
+}
+
+.input-area button:hover{
+background:#0056b3;
+}
+
+#taskList{
+list-style:none;
+padding:0;
+}
+
+#taskList li{
+display:flex;
+justify-content:space-between;
+align-items:center;
+background:#eaf4ff;
+padding:10px;
+margin-top:10px;
+border-radius:5px;
+}
+
+.completed{
+text-decoration:line-through;
+color:gray;
+}
+<script>
+function addTask(){
+
+let input=document.getElementById("taskInput");
+let task=input.value.trim();
+
+if(task===""){
+alert("Please enter a task.");
+return;
+}
+
+let li=document.createElement("li");
+
+li.innerHTML=`
+<span>${task}</span>
+<div>
+<button onclick="this.parentElement.parentElement.querySelector('span').classList.toggle('completed')">✔</button>
+<button onclick="this.parentElement.parentElement.remove()">🗑</button>
+</div>
+`;
+
+document.getElementById("taskList").appendChild(li);
+
+input.value="";
+}
+</script>
 
 </div>
 
