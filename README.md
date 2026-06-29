@@ -106,13 +106,7 @@ GitHub helps developers collaborate on projects, track code changes, and maintai
 <div class="footer">
 <p><b>Developed by Lokesh Kumar</b></p>
 <p>Powered by GitHub Pages</p>
-</div>
-
-</div>
-
-</body>
-</html>  
-<h2>Task Manager</h2>
+    <h2>Task Manager</h2>
 
 <div class="input-area">
     <input type="text" id="taskInput" placeholder="Enter a new task">
@@ -120,3 +114,10 @@ GitHub helps developers collaborate on projects, track code changes, and maintai
 </div>
 
 <ul id="taskList"></ul>
+
+</div>
+
+</div>
+
+</body>
+</html>  
