@@ -1,9 +1,8 @@
-<!DOCTYPE html>
 <html lang="en">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>A&A Application</title>
+<title>T&M Application</title>
 
 <style>
 *{
@@ -69,13 +68,14 @@ color:#555;
 
 <div class="container">
 
-<h1>A&A Application</h1>
+<h1>T&M Application</h1>
 
 <p>
 Welcome to my personal website. This webpage introduces me and provides information about the platform used to create and host this website.
 </p>
 
-<h2>About Me</h2>
+<h2>About Me
+a authentication</h2>
 
 <div class="info">
 <p><b>Name:</b> Lokesh Kumar</p>
@@ -90,11 +90,12 @@ Welcome to my personal website. This webpage introduces me and provides informat
 
 <div class="info">
 <p>
+The Authorization 
 GitHub is a cloud-based platform used for storing, managing, and sharing source code through Git version control.
 </p>
 
 <p>
-This website was developed using HTML and CSS and is hosted using <b>GitHub Pages</b>, which allows developers to publish websites directly from a GitHub repository for free.
+GitHub which allows developers to publish websites directly from a GitHub repository for free of cost also.
 </p>
 
 <p>
