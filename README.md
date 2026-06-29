@@ -4,7 +4,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Task Management App</title>
+<title>A&A application App</title>
 
 <style>
 *{
@@ -24,7 +24,7 @@ height:100vh;
 
 .container{
 width:420px;
-background:white;
+background:skyblue
 padding:20px;
 border-radius:10px;
 box-shadow:0 5px 10px rgba(0,0,0,.2);
@@ -92,7 +92,7 @@ padding:5px 10px;
 
 <div class="container">
 
-<h2>Task Management App</h2>
+<h2>A&A Application</h2>
 
 <div class="input-area">
 <input type="text" id="taskInput" placeholder="Enter Task">
