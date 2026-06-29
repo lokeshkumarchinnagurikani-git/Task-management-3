@@ -139,6 +139,7 @@ Madanapalle Institute of Technology and Science
 <p><b>College:</b> Madanapalle Institute of Technology and Science</p>
 <p><b>Skills:</b> HTML, Python</p>
 <p><b>Email:</b> lokeshkumarchinnagurikani@gmail.com</p>
+<p><b>Platform Used:</b> This website was created and hosted using <b>GitHub Pages</b>.</p>
 
 </div>
 
