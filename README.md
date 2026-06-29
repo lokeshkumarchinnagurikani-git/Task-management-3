@@ -1,10 +1,9 @@
-# lokesh kumar 
 <!DOCTYPE html>
 <html lang="en">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>A&A application App</title>
+<title>A&A Application</title>
 
 <style>
 *{
@@ -15,25 +14,33 @@ font-family:Arial,sans-serif;
 }
 
 body{
-background:#f4f7fc;
+background:skyblue;
 display:flex;
 justify-content:center;
 align-items:center;
-height:100vh;
+min-height:100vh;
+padding:20px;
 }
 
 .container{
-width:420px;
-background:skyblue
-padding:20px;
-border-radius:10px;
-box-shadow:0 5px 10px rgba(0,0,0,.2);
+width:450px;
+background:#ffffff;
+padding:25px;
+border-radius:15px;
+box-shadow:0 8px 20px rgba(0,0,0,0.2);
 }
 
 h2{
 text-align:center;
+color:#0066cc;
+margin-bottom:10px;
+}
+
+.subtitle{
+text-align:center;
+font-size:15px;
+color:#555;
 margin-bottom:20px;
-color:#007bff;
 }
 
 .input-area{
@@ -47,6 +54,7 @@ flex:1;
 padding:10px;
 border:1px solid #ccc;
 border-radius:5px;
+font-size:15px;
 }
 
 button{
@@ -56,6 +64,7 @@ color:white;
 border:none;
 border-radius:5px;
 cursor:pointer;
+font-size:14px;
 }
 
 button:hover{
@@ -70,10 +79,10 @@ li{
 display:flex;
 justify-content:space-between;
 align-items:center;
+background:#eaf4ff;
 padding:10px;
 margin-bottom:10px;
-background:#eaf2ff;
-border-radius:5px;
+border-radius:8px;
 }
 
 .completed{
@@ -83,7 +92,22 @@ color:gray;
 
 .actions button{
 margin-left:5px;
-padding:5px 10px;
+padding:6px 10px;
+}
+
+.about{
+margin-top:25px;
+padding-top:15px;
+border-top:2px solid #ddd;
+text-align:center;
+font-size:14px;
+line-height:1.8;
+color:#333;
+}
+
+.about h3{
+color:#0066cc;
+margin-bottom:10px;
 }
 </style>
 </head>
@@ -94,24 +118,41 @@ padding:5px 10px;
 
 <h2>A&A Application</h2>
 
+<p class="subtitle">
+Developed by <b>Lokesh Kumar</b><br>
+B.Tech (Electronics & Communication Engineering)<br>
+Madanapalle Institute of Technology and Science
+</p>
+
 <div class="input-area">
-<input type="text" id="taskInput" placeholder="Enter Task">
+<input type="text" id="taskInput" placeholder="Enter your task">
 <button onclick="addTask()">Add</button>
 </div>
 
 <ul id="taskList"></ul>
 
+<div class="about">
+<h3>About Developer</h3>
+
+<p><b>Name:</b> Lokesh Kumar</p>
+<p><b>Course:</b> B.Tech - Electronics & Communication Engineering</p>
+<p><b>College:</b> Madanapalle Institute of Technology and Science</p>
+<p><b>Skills:</b> HTML, Python</p>
+<p><b>Email:</b> lokeshkumarchinnagurikani@gmail.com</p>
+
+</div>
+
 </div>
 
 <script>
+
 function addTask(){
 
 let input=document.getElementById("taskInput");
-
 let task=input.value.trim();
 
 if(task===""){
-alert("Enter a task");
+alert("Please enter a task.");
 return;
 }
 
@@ -131,13 +172,20 @@ document.getElementById("taskList").appendChild(li);
 input.value="";
 }
 
-function completeTask(btn){
-btn.parentElement.parentElement.querySelector("span").classList.toggle("completed");
+function completeTask(button){
+
+button.parentElement.parentElement
+.querySelector("span")
+.classList.toggle("completed");
+
 }
 
-function deleteTask(btn){
-btn.parentElement.parentElement.remove();
+function deleteTask(button){
+
+button.parentElement.parentElement.remove();
+
 }
+
 </script>
 
 </body>
