@@ -1,4 +1,3 @@
-<!DOCTYPE html>
 <html lang="en">
 <head>
 <meta charset="UTF-8">
@@ -116,7 +115,7 @@ margin-bottom:10px;
 
 <div class="container">
 
-<h2>A&A Application</h2>
+<h2>T&M Application</h2>
 
 <p class="subtitle">
 Developed by <b>Lokesh Kumar</b><br>
