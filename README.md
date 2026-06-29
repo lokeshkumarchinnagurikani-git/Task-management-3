@@ -1,3 +1,4 @@
+<!DOCTYPE html>
 <html lang="en">
 <head>
 <meta charset="UTF-8">
@@ -22,91 +23,44 @@ padding:20px;
 }
 
 .container{
-width:450px;
-background:#ffffff;
-padding:25px;
+max-width:700px;
+width:100%;
+background:#fff;
+padding:30px;
 border-radius:15px;
 box-shadow:0 8px 20px rgba(0,0,0,0.2);
 }
 
+h1{
+text-align:center;
+color:#0056b3;
+margin-bottom:10px;
+}
+
 h2{
-text-align:center;
-color:#0066cc;
+color:#007bff;
+margin-top:20px;
 margin-bottom:10px;
 }
 
-.subtitle{
-text-align:center;
-font-size:15px;
-color:#555;
-margin-bottom:20px;
-}
-
-.input-area{
-display:flex;
-gap:10px;
-margin-bottom:20px;
-}
-
-input{
-flex:1;
-padding:10px;
-border:1px solid #ccc;
-border-radius:5px;
-font-size:15px;
-}
-
-button{
-padding:10px 15px;
-background:#007bff;
-color:white;
-border:none;
-border-radius:5px;
-cursor:pointer;
-font-size:14px;
-}
-
-button:hover{
-background:#0056b3;
-}
-
-ul{
-list-style:none;
-}
-
-li{
-display:flex;
-justify-content:space-between;
-align-items:center;
-background:#eaf4ff;
-padding:10px;
-margin-bottom:10px;
-border-radius:8px;
-}
-
-.completed{
-text-decoration:line-through;
-color:gray;
-}
-
-.actions button{
-margin-left:5px;
-padding:6px 10px;
-}
-
-.about{
-margin-top:25px;
-padding-top:15px;
-border-top:2px solid #ddd;
-text-align:center;
-font-size:14px;
+p{
+font-size:16px;
 line-height:1.8;
 color:#333;
 }
 
-.about h3{
-color:#0066cc;
-margin-bottom:10px;
+.info{
+background:#f2f8ff;
+padding:15px;
+border-radius:10px;
+margin-top:15px;
+}
+
+.footer{
+margin-top:25px;
+text-align:center;
+font-size:14px;
+color:#555;
 }
 </style>
 </head>
@@ -115,78 +69,45 @@ margin-bottom:10px;
 
 <div class="container">
 
-<h2>T&M Application</h2>
+<h1>A&A Application</h1>
 
-<p class="subtitle">
-Developed by <b>Lokesh Kumar</b><br>
-B.Tech (Electronics & Communication Engineering)<br>
-Madanapalle Institute of Technology and Science
+<p>
+Welcome to my personal website. This webpage introduces me and provides information about the platform used to create and host this website.
 </p>
 
-<div class="input-area">
-<input type="text" id="taskInput" placeholder="Enter your task">
-<button onclick="addTask()">Add</button>
-</div>
+<h2>About Me</h2>
 
-<ul id="taskList"></ul>
-
-<div class="about">
-<h3>About Developer</h3>
-
+<div class="info">
 <p><b>Name:</b> Lokesh Kumar</p>
-<p><b>Course:</b> B.Tech - Electronics & Communication Engineering</p>
+<p><b>Course:</b> B.Tech - Electronics and Communication Engineering (ECE)</p>
 <p><b>College:</b> Madanapalle Institute of Technology and Science</p>
 <p><b>Skills:</b> HTML, Python</p>
 <p><b>Email:</b> lokeshkumarchinnagurikani@gmail.com</p>
-<p><b>Platform Used:</b> This website was created and hosted using <b>GitHub Pages</b>.</p>
+<p><b>Career Goal:</b> To improve my web development and programming skills while building useful applications.</p>
+</div>
 
+<h2>About GitHub</h2>
+
+<div class="info">
+<p>
+GitHub is a cloud-based platform used for storing, managing, and sharing source code through Git version control.
+</p>
+
+<p>
+This website was developed using HTML and CSS and is hosted using <b>GitHub Pages</b>, which allows developers to publish websites directly from a GitHub repository for free.
+</p>
+
+<p>
+GitHub helps developers collaborate on projects, track code changes, and maintain different versions of applications efficiently.
+</p>
+</div>
+
+<div class="footer">
+<p><b>Developed by Lokesh Kumar</b></p>
+<p>Powered by GitHub Pages</p>
 </div>
 
 </div>
-
-<script>
-
-function addTask(){
-
-let input=document.getElementById("taskInput");
-let task=input.value.trim();
-
-if(task===""){
-alert("Please enter a task.");
-return;
-}
-
-let li=document.createElement("li");
-
-li.innerHTML=`
-<span>${task}</span>
-
-<div class="actions">
-<button onclick="completeTask(this)">✔</button>
-<button onclick="deleteTask(this)">🗑</button>
-</div>
-`;
-
-document.getElementById("taskList").appendChild(li);
-
-input.value="";
-}
-
-function completeTask(button){
-
-button.parentElement.parentElement
-.querySelector("span")
-.classList.toggle("completed");
-
-}
-
-function deleteTask(button){
-
-button.parentElement.parentElement.remove();
-
-}
-
-</script>
 
 </body>
-</html>
+</html>  
